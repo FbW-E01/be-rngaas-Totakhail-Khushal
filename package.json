@@ -1,0 +1,21 @@
+{
+  "name": "be-rngaas-totakhail-khushal",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "- Create a Node web server that listens to port 8081. - When the server receives a request, it just responds with a random number",
+  "main": "index.js",
+  "scripts": {
+    "start":"nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FbW-E01/be-rngaas-Totakhail-Khushal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FbW-E01/be-rngaas-Totakhail-Khushal/issues"
+  },
+  "homepage": "https://github.com/FbW-E01/be-rngaas-Totakhail-Khushal#readme"
+}
