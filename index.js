@@ -1,16 +1,21 @@
 import http from 'http'
+import dotenv from 'dotenv'
 
-const server=http.createServer((req,res) =>{
-    console.log(("First exercise"));
 
-    res.write(`${Math.floor(Math.random()*20)}`);
+//Reading values from the .env files into process.env
+dotenv.config()
 
-    // const randomNumber = Math.floor(Math.random()*20)
-    // const number=randomNumber.toString();
-    // res.write(number);
-    
 
-    res.end(" is a random number ")
-})
-// console.log("And the random number is" );
-server.listen(8081)
+// Printing out an exapmle of value stored in .env
+console.log("API_KEY is" +process.env.API_KEY);
+
+function requestHandler(request,response){
+    console.log("Request received, making random number");
+    const randomNumber=Math.round(Math.random() * 888);
+    response.end(process.env.API_KEY + "------" +randomNumber.toString())
+
+}
+
+const myServer= http.createServer(requestHandler)
+
+myServer.listen(process.env.API_KEY )

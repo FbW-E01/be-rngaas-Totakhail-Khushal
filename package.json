@@ -5,7 +5,8 @@
   "description": "- Create a Node web server that listens to port 8081. - When the server receives a request, it just responds with a random number",
   "main": "index.js",
   "scripts": {
-    "start":"nodemon index.js"
+    "start": "nodemon index.js",
+    "dev":"nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/FbW-E01/be-rngaas-Totakhail-Khushal/issues"
   },
-  "homepage": "https://github.com/FbW-E01/be-rngaas-Totakhail-Khushal#readme"
+  "homepage": "https://github.com/FbW-E01/be-rngaas-Totakhail-Khushal#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "node-fetch": "^3.0.0",
+    "save": "^2.4.0"
+  }
 }
