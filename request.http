@@ -1,0 +1,22 @@
+Get http://localhost:8081/
+
+
+###
+
+send Request
+curl http://localhost:8081/test
+
+
+###
+
+
+send Request
+Get http://github.com/
+
+
+
+
+###
+
+send Request
+Get https://www.otto.de/san-srch-suggest-api/completion?q
